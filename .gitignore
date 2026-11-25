@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+
+models/*.pkl
+reports/generated_reports/*
+outputs/*
+*.wav
+*.mp3
+
+.env
+.vscode/

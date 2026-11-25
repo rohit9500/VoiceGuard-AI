@@ -1,0 +1,152 @@
+/* VoiceGuard AI - Professional UI Theme v2.0 */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+:root {
+    --bg: #0B1220;
+    --surface: #121A2A;
+    --surface2: #172033;
+    --border: #2B3950;
+    --primary: #3B82F6;
+    --primary2: #2563EB;
+    --text: #F8FAFC;
+}
+
+html,
+body,
+.stApp {
+    font-family: 'Inter', sans-serif!important;
+    background: radial-gradient(circle at top left, #16213E 0%, #0B1220 45%), radial-gradient(circle at bottom right, #111827 0%, #0B1220 45%);
+    color: var(--text);
+}
+
+#MainMenu,
+footer {
+    visibility: hidden;
+}
+
+section[data-testid="stSidebar"] {
+    background: #101827;
+    border-right: 1px solid var(--border);
+}
+
+h1 {
+    font-size: 3.2rem!important;
+    font-weight: 900!important;
+    color: #fff!important;
+}
+
+h2 {
+    font-size: 2rem!important;
+    font-weight: 800!important;
+    color: #7CB9FF!important;
+}
+
+h3 {
+    font-size: 1.35rem!important;
+    font-weight: 700!important;
+    color: #fff!important;
+}
+
+p,
+li {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #CBD5E1;
+}
+
+.hero-card {
+    background: linear-gradient(135deg, #16213E, #0F172A);
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    padding: 36px;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, .35);
+}
+
+.feature-card,
+.info-card,
+.upload-card {
+    background: #172033;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 24px;
+    transition: .25s;
+}
+
+.feature-card:hover,
+.info-card:hover,
+.upload-card:hover,
+div[data-testid="metric-container"]:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary);
+}
+
+div[data-testid="metric-container"] {
+    background: #172033;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 18px;
+}
+
+div[data-testid="stMetricValue"] {
+    font-size: 2rem!important;
+    font-weight: 800!important;
+    color: #fff!important;
+}
+
+.stButton>button {
+    width: 100%;
+    height: 58px;
+    border: none;
+    border-radius: 16px;
+    background: linear-gradient(135deg, var(--primary2), var(--primary));
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    box-shadow: 0 12px 28px rgba(37, 99, 235, .35);
+    transition: .25s;
+}
+
+.stButton>button:hover {
+    transform: translateY(-3px);
+}
+
+.stDownloadButton>button {
+    width: 100%;
+    height: 54px;
+    border: none;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #16A34A, #22C55E);
+    color: #fff;
+    font-weight: 700;
+}
+
+section[data-testid="stFileUploader"] {
+    background: #172033;
+    border: 2px dashed var(--primary);
+    border-radius: 20px;
+    padding: 24px;
+}
+
+div[data-testid="stAlert"],
+[data-testid="stDataFrame"],
+.js-plotly-plot,
+img {
+    border-radius: 16px;
+}
+
+.stProgress>div>div>div {
+    background: linear-gradient(90deg, #22C55E, #16A34A);
+}
+
+hr {
+    border: 1px solid #233046;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 20px;
+}
